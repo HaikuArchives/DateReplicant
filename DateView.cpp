@@ -143,7 +143,7 @@ DateView::~DateView()
 		delete path_image[1];
 }
 
-status_t DateView::Archive(BMessage *archive, bool deep = true) const
+status_t DateView::Archive(BMessage *archive, bool deep) const
 {
 	archive->AddString("add_on", app_sig);
 	
@@ -248,7 +248,7 @@ BBitmap *DateView::LoadImage(const char *file_name)
 	return result;
 }
 
-void DateView::applySettings(bool changes = true)
+void DateView::applySettings(bool changes)
 {
 	if (path_image[0]->Length() != 0 && LoadImage(path_image[0]->String()))
 	{

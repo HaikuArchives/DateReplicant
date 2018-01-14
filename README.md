@@ -1,4 +1,7 @@
-Date v0.01 for BeOS
+Date v0.01 for Haiku
+==
+
+![Screenshot](DateReplicant.png)
 
 This is a simple replicant application. It shows date info.  You may change program settings by editing "~/config/settings/Date_settings" file.  Settings file will be created automatically after first launch of "Date". Default background image is from OBOS GUI prototype (OBOS_UI_v2_2 image).
 
@@ -8,6 +11,7 @@ Special thanks to: Sergei Dolgov, Roman Kopko, Ilya Nedoluzhko
 
 Example settings file:
 
+```
 Background_AM "/boot/beos/documentation/graphics/belogo.jpg"
 	-- path for AM image (default "")
 Background_PM "" 
@@ -33,3 +37,4 @@ DayString "%d"
 		and other
 MonthString "%b"
 YearString "%y"
+```
